@@ -1,0 +1,23 @@
+import React from 'react';
+
+import { Section, SectionText, SectionTitle } from '../../styles/GlobalComponents';
+import Button from '../../styles/GlobalComponents/Button';
+import { LeftSection } from './HeroStyles';
+
+const Hero = (props) => (
+  <Section row nopadding>
+    <LeftSection>
+      <SectionTitle main center>
+        Welcome To <br/>
+        My Personal Portfolio
+      </SectionTitle>
+      <SectionText>
+        I have more than four year experiance of react.I can develop more complex application.
+      </SectionText>
+      <Button onClick={()=>window.location="http://shyamarasoi.com"}>Hire Me</Button>
+    </LeftSection>
+
+  </Section>
+);
+
+export default Hero;
